@@ -1,4 +1,4 @@
-# {{CHALLENGE_NAME}}
+# Warm-Up #1
 
 <!-- crypto, forensics, osint, reversing, stegano, websec, misc -->
 * Category: **stegano**
