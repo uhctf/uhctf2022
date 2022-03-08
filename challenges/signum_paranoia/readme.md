@@ -4,7 +4,7 @@
 * Flag Format: **uhctf{...}**
 
 * Flags: <details><summary>CLICK TO SHOW</summary><ul><ul>
-<li>static: <code>uhctf{constraints-make-weak-passwords-1nbany}</code></li>
+<li>static: <code>uhctf{constraints-make-weak-passwords-ab3d21}</code></li>
 </ul></ul></details>
 
 * Connection Info: \#TODO
