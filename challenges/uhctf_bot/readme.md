@@ -21,7 +21,7 @@
 </details></li>
 <li><details>
     <summary><strong>10%</strong>: Confirm your understanding of the topic.</summary>
-    ![](assets/2021-12-23-21-47-35.png)
+    <img src='https://cdn.discordapp.com/attachments/792751438673608724/950859054891298906/2021-12-23-21-47-35.png'>
 </details></li>
 <li><details>
     <summary><strong>50%</strong>: Spoils the vulnerability, but not how to exploit it.</summary>
