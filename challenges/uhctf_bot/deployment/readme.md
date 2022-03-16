@@ -6,3 +6,4 @@
 w. Invite bot to your server: https://discord.com/oauth2/authorize?scope=applications.commands+bot&permissions=1024&client_id=<client_id>
 4. `docker build -t <image_name> .`
 5. `docker run --rm <image_name>`
+6. Run `./select_white_box_files.sh` to generate the zip with source code to be reviewed by players.

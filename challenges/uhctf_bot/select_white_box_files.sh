@@ -15,4 +15,5 @@ cp ./package-lock.json ${DIR}
 
 cd -
 
-zip -mr ./prototype_discord_bot.zip ${DIR}
+zip -mr ./attachments/prototype_discord_bot.zip ${DIR}
+echo 'Check `./attachments` directory'
