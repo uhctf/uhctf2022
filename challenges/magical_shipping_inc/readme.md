@@ -26,6 +26,6 @@
 </ul></ul>
 
 ## Description
-The shipping company Magical Shipping Inc. sent you an e-mail. Apparently they released a new application which allows you to track packages. They even attached it in the mail. How useful! This is totally not malware you just downloaded, right...?
+The shipping company Magical Shipping Inc. sent you an e-mail. Apparently they released a new application which allows you to track packages. They even attached it to the mail. How convenient! This is totally not malware you just downloaded... right?
 
 Figure out what is in the binary!
