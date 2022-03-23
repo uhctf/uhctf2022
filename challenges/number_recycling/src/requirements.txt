@@ -1,0 +1,5 @@
+asn1crypto==1.5.1
+cffi==1.15.0
+cryptography==36.0.2
+enum-compat==0.0.3
+pycparser==2.21
