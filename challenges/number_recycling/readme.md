@@ -26,4 +26,4 @@
 </ul></ul>
 
 ## Description
-They say recycling is good for the environment. That's why I used recycled public keys to encrypt duplicates of the flag. Don't worry though, I changed them a bit so no one would notice!
+They say recycling is good for the environment. That's why I used recycled public keys to encrypt duplicates of the flag. Don't worry though, I changed the keys a bit so no one would notice!
