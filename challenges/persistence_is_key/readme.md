@@ -12,10 +12,6 @@
 <li>static: <code>uhctf{P3rs1st4nc3_1s_h4rd_t0_h1d3}</code></li>
 </ul></ul></details>
 
-<!-- If you can give a single link, hostname, or one-line connection
-instructions, use this built-in feature. If things are more complicated, leave
-this empty and explain everything in the description instead. -->
-* Connection Info: **{{CONNECTION_INFO}}**
 
 <!-- Use the challenge's display names, not the folder names -->
 * Requirements:
@@ -29,17 +25,15 @@ this empty and explain everything in the description instead. -->
 <!-- {{HINT_DESCRIPTION}} explains what exactly the hint will help with -->
 * Hints: <ul><ul>
 <li><details>
-    <summary><strong>{{HINT_COST}}%</strong>: {{HINT_DESCRIPTION}}</summary>
-    {{HINT}}
+    <summary><strong>25%</strong>: Where to start</summary>
+    It would be a good idea to look at ways to create a persistent service on linux.
 </details></li>
 <li><details>
-    <summary><strong>{{HINT_COST}}%</strong>: {{HINT_DESCRIPTION}}</summary>
-    {{HINT}}
+    <summary><strong>50%</strong>: Where to look</summary>
+    Systemd seems like a good way to create a persistent service.
 </details></li>
 </ul></ul>
 
 ## Description
 <!-- HTML can be used here if needed -->
-{{DESCRIPTION_PARAGRAPH}}
-
-{{DESCRIPTION_PARAGRAPH}}
+One of our machines has some malware we can't find, but it is there every time, even after a reboot. Please investigate, we managed to extract part of the filesystem.
