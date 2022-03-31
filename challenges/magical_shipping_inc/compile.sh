@@ -7,7 +7,7 @@ TEMPFILE=`mktemp`
 gcc ./src/main.c -o ${TEMPFILE} -O0 -static
 
 # pack with UPX
-upx -9 ${TEMPFILE}
+upx --best ${TEMPFILE}
 
 # tweak magic bytes
 mkdir -p ./attachments/
