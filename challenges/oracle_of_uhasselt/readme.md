@@ -20,11 +20,11 @@
     Did you try asking the oracle about the hint she gave you? Maybe if you twist her words, she will yell at you for a valid reason?
 </details></li>
 <li><details>
-    <summary><strong>20%</strong>: Points you into the right research direction.</summary>
+    <summary><strong>30%</strong>: Points you into the right research direction.</summary>
     The oracle loves giving feedback. Some say the nicest thing she can say is: `The oracle understands your struggles...`. But for me, `Padding is incorrect.` is a lot more meaningful.
 </details></li>
 <li><details>
-    <summary><strong>10%</strong>: Vaguely describes the process of the exploit.</summary>
+    <summary><strong>15%</strong>: Vaguely describes the process of the exploit.</summary>
     The oracle came to my office earlier. She complained about students attacking her with incorrectly padded questions. They were trying to deduce the meaning of her prophecies based on her reactions!
 </details></li>
 </ul></ul>
