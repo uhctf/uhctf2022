@@ -25,9 +25,7 @@
     <li><details>
         <summary><strong>50%</strong>: Will give you tools to help you build the correct attack.</summary>
         Add the following get parameter to your request. It will give you some 'debug information' on failed requests.
-    <pre>
-    2RZCQY24IKSHKA67RBZU5L3HKCEEUOIGPLHQ5M6X=KLZ5SKGIABDZTFWKD4CL4E5N2SINVGCTXSLYUU2Y
-    </pre>
+    <pre>2RZCQY24IKSHKA67RBZU5L3HKCEEUOIGPLHQ5M6X=KLZ5SKGIABDZTFWKD4CL4E5N2SINVGCTXSLYUU2Y</pre>
     </details></li>
     </ul>
 
