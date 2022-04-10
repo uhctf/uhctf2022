@@ -24,6 +24,7 @@ def get_db_conn():
     global DBCONN
     return DBCONN.cursor()
 
+
 @application.route("/")
 def index():
     return application.send_static_file("index.html")
@@ -36,8 +37,9 @@ def query_db():
 
     try:
         cursor = get_db_conn()
+        # The correct way to do it:
         # cursor.execute(
-        #    "SELECT title, rating, sequel_title, sequel_rating FROM joined_movies WHERE lower_title LIKE ?", ["%{}%".format(request.args["q"].lower())])
+        #    "SELECT title, rating, sequel_title, sequel_rating FROM movies WHERE lower_title LIKE ?", ["%{}%".format(request.args["q"].lower())])
 
         query = "SELECT title, rating, sequel_title, sequel_rating FROM movies WHERE lower_title LIKE '%" + \
             request.args["q"].lower()+"%'"
@@ -50,4 +52,4 @@ def query_db():
         if request.args.get(CONFIG['query_parameter'][0]) == CONFIG['query_parameter'][1]:
             return jsonify({'error': 'SQLite database error', '_DEBUG_MSG': str(e), '_DEBUG_QRY': query}), 500
 
-        return jsonify({'error': 'Database error'}), 500
+        return jsonify({'error': 'SQLite database error'}), 500
