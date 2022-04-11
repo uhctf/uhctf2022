@@ -1,6 +1,6 @@
 # Deployment
 1. Create an application with a bot over at https://discord.com/developers/applications/
-  - Note: `Public Bot` and `Requires OAuth2 Code Grant` must be enabled
+  - Note: `Public Bot` must be enabled
 2. Copy `default.env` to `src/.env` and fill in the values
     - For `DISCORD_CLIENT_ID` and `DISCORD_TOKEN` see the OAuth2 tab for your application
     - `DISCORD_GUILD_ID` is the ID of the server which the bot will be invited to
