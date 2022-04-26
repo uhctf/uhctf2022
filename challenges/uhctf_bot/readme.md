@@ -1,4 +1,4 @@
-# Prototype Discord bot
+# Prototype
 * Category: **websec**
 
 * Flag Format: **uhctf{...}**
