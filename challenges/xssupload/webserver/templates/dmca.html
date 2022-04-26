@@ -1,0 +1,39 @@
+{% from 'bootstrap5/form.html' import render_form %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XSSUpload</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-center">
+        <img class="mb-4" src="/static/logo.svg" alt="" width="300">
+    </div>
+    <main class="form-signin">
+        <form method="post">
+            <div class="container">
+                <h1 class="h3 fw-normal">DMCA claims</h1>
+                <p>As we're terrified of the USA, we accept DMCA claims. Fill in the form and the administrator will
+                    have a look at it.</p>
+
+                <p><strong>Every field is required</strong></p>
+
+                <form method="post" action="/contact">
+                    {{ render_form(form) }}
+                </form>
+            </div>
+
+            {% include "partials/footer.html" %}
+    </main>
+
+
+
+</body>
+
+</html>
