@@ -51,7 +51,8 @@ if __name__ == '__main__':
 
         # handle messages
         for sender_client, message in server.get_messages():
-            if sender_client not in clients:
+            # when routing is involved, we receive weird garbage bytes which the server misinterprets instead of waiting for proper user input.
+            if sender_client not in clients or (len(message) > 1 and message[-1] == '#'):
                 continue
 
             server.send_message(new_client, "")
