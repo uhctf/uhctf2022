@@ -1,0 +1,45 @@
+{% from 'bootstrap5/form.html' import render_field %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XSSUpload</title>
+
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/custom.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <img class="mb-4" src="/static/logo.svg" alt="" width="300">
+            <h1 class="h3 mb-3 fw-normal">Upload files up to 1kiB</h1>
+            <p>Files are deleted after 10 minutes</p>
+            {{ form.csrf_token }}
+            {{ render_field(form.file) }}
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Upload file</button>
+            {% include "partials/footer.html" %}
+        </form>
+    </main>
+</body>
+
+</html>
