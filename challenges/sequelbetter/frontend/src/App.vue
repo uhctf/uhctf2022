@@ -32,7 +32,7 @@
         </v-container>
       </v-container>
     </v-main>
-    <v-footer absolute>
+    <v-footer id="footer">
       <p>
         Photo by
         <a
@@ -58,6 +58,15 @@
 #main {
   min-height: 100%;
   background: none;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#footer a {
+  color: white;
 }
 body {
   background-image: url("assets/cinema.jpg");
