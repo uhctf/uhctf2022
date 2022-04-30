@@ -32,6 +32,7 @@ def decrypt(cypher_text):
 
 
 if __name__ == '__main__':
+    encrypted_flag = encrypt(flag)
     while True:
         server.update()
 
@@ -63,7 +64,6 @@ if __name__ == '__main__':
             except Exception as error:
                 server.send_message(
                     sender_client, f'The oracle has spoken: "{error}".')
-                encrypted_flag = encrypt(flag)
                 server.send_message(
                     sender_client, f"Maybe this will lead you? {encrypted_flag}")
             finally:
