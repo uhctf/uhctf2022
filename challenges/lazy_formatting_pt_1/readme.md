@@ -20,8 +20,8 @@
     Wow, the error messages for when the format rule's syntax is incorrect are pretty useful. Wait, haven't I seen that error somewhere before?
 </details></li>
 <li><details>
-    <summary><strong>35%</strong>: Helps exploiting the functionality of the website.</summary>
-    The developers are just shoving their pile of work onto another application! Can we inject our dirty work into the pile? Now that would be two birds in one stone.
+    <summary><strong>20%</strong>: Helps exploiting the functionality of the website.</summary>
+    The developers are shoving their work onto another application! Can we inject our work into the pile?
 </details></li>
 </ul></ul>
 
