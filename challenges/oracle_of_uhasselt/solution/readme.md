@@ -23,10 +23,10 @@ The following script allows `rustpad` to talk with the Telnet oracle and parse i
 ```sh
 #! /bin/bash
 
-echo ${1} | telnet <IP> | grep 'The oracle understands your struggles...'
+echo ${1} | nc <IP> <PORT> | grep 'The oracle understands your struggles...'
 ```
 
 Decryption of the oracle's message with `rustpad` can be done with the following command:
 ```sh
-rustpad script --oracle ./rustpad_script.sh --block-size 8 --decrypt 4b735e3b6573297482b1c427abf022d6f7d71907bd7ef27fe5490f42c5c00ddcd02939137b5c04b7e1c1835449ba68786ddb928dfe6064d8
+rustpad script --oracle ./rustpad_script.sh --block-size 16 --decrypt <HEX_MSG>
 ```
