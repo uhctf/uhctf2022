@@ -1,13 +1,12 @@
 # Solution
-This is a cryptography challenge. The oracle is a Telnet service. It asks you for your "question", thinks about it, and responds appropriately. If we play around with possible inputs, we discover several different possible responses.
+This is a cryptography challenge. The oracle is a network service. It asks you for your "question", thinks about it, and responds appropriately. If we play around with possible inputs, we discover several different possible responses.
 
 ## Error responses
 When your input is "incorrect", the oracle will first respond with an error. It also always gives you a long hexadecimal string.
 
 The possible errors are:
-- `non-hexadecimal number found in fromhex() arg at position <idx>`: this implies that your input is expected to be in hexadecimal format.
-- `Data must be padded to 8 byte boundary in CBC mode`: CBC mode is a term used in encryption. CBC is a block cipher mode, a technique used to convert encryption functions which work on a fixed amount of data ("block" of bytes) into functions which work on multiples of this amount of data (multiple blocks).
-- `Padding is incorrect.`: blocks are usually 8 or 16 bytes long. If the data to be encrypted does not align with these boundaries, padding must be added. PKCS-5 and PKCS-7 are simple yet popular padding schemes. This error indicates that the padding scheme was not followed correctly.
+- `Data must be hex encoded.`: this implies that your input is expected to be in hexadecimal format.
+- `Padding is incorrect.`: encryption functions only work on a fixed amount of bytes called a block. To support arbitrary length inputs, i.e. multiple blocks, a block chaining algorithm/mode of operation is used. Blocks are usually 8 or 16 bytes long. If the data to be encrypted does not align with these boundaries, padding must be added. PKCS-5 and PKCS-7 are simple yet popular padding schemes. This error indicates that the padding scheme was not followed correctly.
 
 ## Correct response
 When your input is "correct", the oracle responds with `The oracle understands your struggles...`. An example of "correct" input is the long hexadecimal string given to us by the oracle.
