@@ -7,7 +7,11 @@
 <li>static: <code>uhctf{why-write-code-if-we-can-use-someone-else-s-a65722}</code></li>
 </ul></ul></details>
 
-* Connection Info: \#TODO
+* Connection Info:
+- 1 instance per team
+- starting from port 8080
+- each team works in a different subnet (123.123.XXX.0/24)
+- team instance = 8080 + XXX
 
 * Requirements:
 

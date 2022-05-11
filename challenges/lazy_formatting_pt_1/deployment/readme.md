@@ -1,3 +1,3 @@
 # Deployment
-1. `docker build -t <image_name> .`
-2. `docker run -p <port>:80 --rm <image_name>`
+1. Adjust range of exposed ports in `docker-compose.yml`
+2. `docker-compose up --scale app=<amount_instances>`

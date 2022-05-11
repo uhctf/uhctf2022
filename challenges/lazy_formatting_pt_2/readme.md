@@ -17,7 +17,7 @@
 * Hints: <ul><ul>
 <li><details>
     <summary><strong>30%</strong>: Gain advanced access to the server.</summary>
-    Direct shell access would be much more useful than executing commands via the website. Maybe we can ask the web server to please open a connection to us?
+    Direct shell access would be much more useful than executing commands via the website. Maybe we can ask the web server to open a connection to us?
 </details></li>
 <li><details>
     <summary><strong>20%</strong>: Helps to discover the system misconfiguration.</summary>
@@ -33,3 +33,5 @@
 This is unbelievable. Even the sysadmin at F2 Software is lazy! It is not that hard manage some computers... Why is this company still in business?
 
 The flag is in the `root` user's home directory.
+
+TIP: Windows firewall might block your entry. We recommend using Kali Linux.
