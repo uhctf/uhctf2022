@@ -21,9 +21,9 @@
 </details></li>
 <li><details>
     <summary><strong>10%</strong>: Solved but server won't give me the flag.</summary>
-    Maybe thing you're replacing is a bit further back? Don't feel afraid to spam the replacement multiple times at the end of your payload.
+    Maybe the thing you're replacing is a bit further back? Don't feel afraid to spam the replacement multiple times at the end of your payload.
 </details></li>
 </ul></ul>
 
 ## Description
-Get your zen ~flow~ quotes rated here! We are quite harsh with the feedback. If you can convince us you got the right ~flow~, we might give you something however...
+Get your zen \~flow\~ quotes rated here! We are quite harsh with the feedback. If you can convince us you got the right \~flow\~, we might give you something however...
