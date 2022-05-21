@@ -3,8 +3,8 @@ services:
     build: webserver
     environment:
       - LEVEL=0
-      - BASEDOMAIN=http://10.66.100.2
-      - INTERNAL_HOSTNAME=http://10.66.100.2
+      - BASEDOMAIN=http://10.66.102.2
+      - INTERNAL_HOSTNAME=http://10.66.102.2
       - SECRETKEY=f422d6fd77f095b9036696e731d526766e92a6a54c35b8d618c6ecff2380
     ports:
       - "80:80"
@@ -19,8 +19,8 @@ services:
     build: webserver
     environment:
       - LEVEL=1
-      - BASEDOMAIN=http://10.66.100.2:1337
-      - INTERNAL_HOSTNAME=http://10.66.100.2:1337
+      - BASEDOMAIN=http://10.66.102.2:1337
+      - INTERNAL_HOSTNAME=http://10.66.102.2:1337
       - SECRETKEY=622f2c584278cef7864e19d870d4d8032a7bcb8a7a17596c48598cdb80a1
     ports:
       - "1337:80"
