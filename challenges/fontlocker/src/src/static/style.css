@@ -1,0 +1,64 @@
+/* Oh man, look af these beautiful styles! */
+
+body {
+    background-color: darkslategrey;
+}
+
+#safe {
+    position: static;
+    margin: auto auto;
+    width: 300px;
+    height: 400px;
+    background: lightgrey;
+    border: 2px white dotted;
+}
+
+#safe_img {
+    width: 100%;
+}
+
+#safe_form {
+    align-items: center;
+    display: flex;
+    columns: 1;
+    flex-direction: column;
+}
+
+#safe_title {
+    text-align: center;
+    margin: 0%;
+}
+
+#password {
+    width: 80%;
+    margin: 20px auto;
+    align-content: center;
+    background: white;
+    border: 3px black solid;
+    text-align: center;
+    font-family: monospace;
+}
+
+#unlock_button {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#unlock_button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
