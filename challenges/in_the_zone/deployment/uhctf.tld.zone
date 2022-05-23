@@ -1,9 +1,9 @@
-;## uhctf.dev authoritative zone
+;## uhctf.tld authoritative zone
 
-$ORIGIN uhctf.dev.
+$ORIGIN uhctf.tld.
 $TTL 86400
 
-@ IN SOA ns1.uhctf.dev. webmaster.uhctf.dev. (
+@ IN SOA ns1.uhctf.tld. webmaster.uhctf.tld. (
                 2011100501      ; serial
                 28800           ; refresh
                 7200            ; retry
@@ -11,9 +11,9 @@ $TTL 86400
                 86400           ; min TTL
                 )
 
-                NS              ns1.uhctf.dev.
-                MX      10      mail.uhctf.dev.
-lists           MX      10      mail.uhctf.dev.
+                NS              ns1.uhctf.tld.
+                MX      10      mail.uhctf.tld.
+lists           MX      10      mail.uhctf.tld.
 @               IN      A       IPADDR
 mail            IN      A       IPADDR
 www             IN      A       IPADDR
