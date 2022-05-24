@@ -15,7 +15,7 @@
 <!-- If you can give a single link, hostname, or one-line connection
 instructions, use this built-in feature. If things are more complicated, leave
 this empty and explain everything in the description instead. -->
-* Connection Info: **{{CONNECTION_INFO}}**
+* Connection Info: **{{10.66.130.2}}**
 
 <!-- Use the challenge's display names, not the folder names -->
 * Requirements:
