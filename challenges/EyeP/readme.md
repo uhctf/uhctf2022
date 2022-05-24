@@ -15,7 +15,7 @@
 <!-- If you can give a single link, hostname, or one-line connection
 instructions, use this built-in feature. If things are more complicated, leave
 this empty and explain everything in the description instead. -->
-* Connection Info: **{{CONNECTION_INFO}}**
+* Connection Info: **{{10.66.130.2}}**
 
 <!-- Use the challenge's display names, not the folder names -->
 * Requirements:
@@ -42,4 +42,4 @@ this empty and explain everything in the description instead. -->
 
 ## Description
 <!-- HTML can be used here if needed -->
-We tapped into a Top Secret facility's camera network and captured a handshake for one of their cameras! Can you figure out the password so we can see what is going on?
+We tapped into a Top Secret facility's camera network and captured a handshake for one of their cameras! Can you figure out the password so we can see what is going on? (Do not attack the infrastructure, the password is in rockyou.txt ;) )

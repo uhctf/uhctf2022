@@ -1,13 +1,12 @@
 # Solution
-This is a cryptography challenge. The oracle is a Telnet service. It asks you for your "question", thinks about it, and responds appropriately. If we play around with possible inputs, we discover several different possible responses.
+This is a cryptography challenge. The oracle is a network service. It asks you for your "question", thinks about it, and responds appropriately. If we play around with possible inputs, we discover several different possible responses.
 
 ## Error responses
 When your input is "incorrect", the oracle will first respond with an error. It also always gives you a long hexadecimal string.
 
 The possible errors are:
-- `non-hexadecimal number found in fromhex() arg at position <idx>`: this implies that your input is expected to be in hexadecimal format.
-- `Data must be padded to 8 byte boundary in CBC mode`: CBC mode is a term used in encryption. CBC is a block cipher mode, a technique used to convert encryption functions which work on a fixed amount of data ("block" of bytes) into functions which work on multiples of this amount of data (multiple blocks).
-- `Padding is incorrect.`: blocks are usually 8 or 16 bytes long. If the data to be encrypted does not align with these boundaries, padding must be added. PKCS-5 and PKCS-7 are simple yet popular padding schemes. This error indicates that the padding scheme was not followed correctly.
+- `Data must be hex encoded.`: this implies that your input is expected to be in hexadecimal format.
+- `Padding is incorrect.`: encryption functions only work on a fixed amount of bytes called a block. To support arbitrary length inputs, i.e. multiple blocks, a block chaining algorithm/mode of operation is used. Blocks are usually 8 or 16 bytes long. If the data to be encrypted does not align with these boundaries, padding must be added. PKCS-5 and PKCS-7 are simple yet popular padding schemes. This error indicates that the padding scheme was not followed correctly.
 
 ## Correct response
 When your input is "correct", the oracle responds with `The oracle understands your struggles...`. An example of "correct" input is the long hexadecimal string given to us by the oracle.
@@ -24,10 +23,10 @@ The following script allows `rustpad` to talk with the Telnet oracle and parse i
 ```sh
 #! /bin/bash
 
-echo ${1} | telnet <IP> | grep 'The oracle understands your struggles...'
+echo ${1} | nc <IP> <PORT> | grep 'The oracle understands your struggles...'
 ```
 
 Decryption of the oracle's message with `rustpad` can be done with the following command:
 ```sh
-rustpad script --oracle ./rustpad_script.sh --block-size 8 --decrypt 4b735e3b6573297482b1c427abf022d6f7d71907bd7ef27fe5490f42c5c00ddcd02939137b5c04b7e1c1835449ba68786ddb928dfe6064d8
+rustpad script --oracle ./rustpad_script.sh --block-size 16 --decrypt <HEX_MSG>
 ```
