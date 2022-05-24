@@ -24,5 +24,5 @@ RUN echo ${USER_FLAG} > /home/${USERNAME}/flag.txt
 
 # run website
 EXPOSE 80
-# I'm lazy to update the PATH variable :)
-CMD /home/webadmin/.local/bin/gunicorn --bind 0.0.0.0:80 wsgi:app
+ENV USERNAME=${USERNAME}
+CMD python3 /home/${USERNAME}/f2_website/app.py

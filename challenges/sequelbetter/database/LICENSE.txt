@@ -1,0 +1,3 @@
+Dataset from Kaggle, licensed under CC0
+
+https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset

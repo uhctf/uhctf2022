@@ -1,10 +1,11 @@
-FROM python:3.9.10-slim
+FROM rust:slim-buster
 
 # Note: only the contents are copied
-COPY ./src/ /usr/src/app/
+COPY ./oracle/ /usr/src/app/
 WORKDIR /usr/src/app/
 
-RUN pip install --no-cache-dir -r ./requirements.txt
+RUN apt-get update && apt-get install -y socat openssl libssl-dev pkg-config
+RUN cargo install --path .
 
-EXPOSE 23
-CMD python ./main.py
+EXPOSE 420
+CMD socat tcp-l:420,reuseaddr,fork system:'oracle'

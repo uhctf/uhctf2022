@@ -7,7 +7,11 @@
 <li>static: <code>uhctf{why-write-code-if-we-can-use-someone-else-s-a65722}</code></li>
 </ul></ul></details>
 
-* Connection Info: \#TODO
+* Connection Info:
+- 1 instance per team
+- starting from port 8080
+- each team works in a different subnet (123.123.XXX.0/24)
+- team instance = 8080 + XXX
 
 * Requirements:
 
@@ -20,8 +24,8 @@
     Wow, the error messages for when the format rule's syntax is incorrect are pretty useful. Wait, haven't I seen that error somewhere before?
 </details></li>
 <li><details>
-    <summary><strong>35%</strong>: Helps exploiting the functionality of the website.</summary>
-    The developers are just shoving their pile of work onto another application! Can we inject our dirty work into the pile? Now that would be two birds in one stone.
+    <summary><strong>20%</strong>: Helps exploiting the functionality of the website.</summary>
+    The developers are shoving their work onto another application! Can we inject our work into the pile?
 </details></li>
 </ul></ul>
 

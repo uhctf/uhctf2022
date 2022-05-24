@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      # expose ports 80 to 110
+      - 8080-8110:80
+    read_only: true
