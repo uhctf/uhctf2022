@@ -42,4 +42,4 @@ this empty and explain everything in the description instead. -->
 
 ## Description
 <!-- HTML can be used here if needed -->
-We tapped into a Top Secret facility's camera network and captured a handshake for one of their cameras! Can you figure out the password so we can see what is going on?
+We tapped into a Top Secret facility's camera network and captured a handshake for one of their cameras! Can you figure out the password so we can see what is going on? (Do not attack the infrastructure, the password is in rockyou.txt ;) )
