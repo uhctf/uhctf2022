@@ -1,0 +1,15 @@
+// Portfolio item 4 modal popup
+#portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .close-modal(data-bs-dismiss='modal')
+                img(src='assets/img/close-icon.svg', alt='Close modal')
+            .container
+                .row.justify-content-center
+                    .col-lg-8
+                        .modal-body
+                            // Project details
+                            img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/4.jpg', alt='...')
+                            button.btn.btn-primary.btn-xl.text-uppercase(data-bs-dismiss='modal', type='button')
+                                i.fas.fa-xmark.me-1
+                                | Close Project

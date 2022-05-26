@@ -1,0 +1,6 @@
+../video/meettheteamceo.mp4 filter=lfs diff=lfs merge=lfs -text
+../video/meettheteamops.mp4 filter=lfs diff=lfs merge=lfs -text
+../video/meettheteamsales.mp4 filter=lfs diff=lfs merge=lfs -text
+../video/meettheteamceo.tar.gz filter=lfs diff=lfs merge=lfs -text
+../video/meettheteamops.tar.gz filter=lfs diff=lfs merge=lfs -text
+../video/meettheteamsales.tar.gz filter=lfs diff=lfs merge=lfs -text

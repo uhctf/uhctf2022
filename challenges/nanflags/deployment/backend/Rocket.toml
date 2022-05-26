@@ -1,0 +1,5 @@
+[production]
+port = 80
+# openssl rand -base64 32
+secret_key = "KBe6hcq5z5vv8O+sJnuJ8xo2Na05X8mVsmhX/UIoRm4="
+limits = { forms = 1024, json = 1024 }
